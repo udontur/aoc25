@@ -4,7 +4,6 @@
 #define ss second
 using namespace std;
 void udontur(){
-
 }
 int32_t main(){
     ios::sync_with_stdio(0);
