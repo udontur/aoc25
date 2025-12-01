@@ -10,18 +10,19 @@ void udontur(){
         char rotate=inp[0];
         string times=inp.substr(1, inp.size()-1);
         int time=stoi(times);
-        int tmp=time-cur;
+        // # of full rotations
+        ans+=time/100;
+        // Final rotation
         if(rotate=='L'){
-            cur-=time;
+            cur-=time%100;
         }else{
-            cur+=time;
+            cur+=time%100;
         }
-        if(tmp>0){
-            int rot=tmp%k;
-            ans+=rot;
-        }
-        cur=((cur%k)+k)%k;
-        if(cur==0) ans++;
+        // Out of bound -> passed zero once
+        if(cur>99) ans++;
+        else if(cur<0) ans++;
+        // Make it real
+        cur=((cur%100)+100)%100;
     }
     cout<<ans<<"\n";
 }
