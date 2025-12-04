@@ -1,2 +1,5 @@
 # Advent of Code 2025
-[Advent of Code](https://adventofcode.com/)
+
+My solution to the [Advent of Code](https://adventofcode.com/) 2025. 
+
+> Thank you (the organizers) for creating this challenge!
