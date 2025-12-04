@@ -11,7 +11,7 @@ int32_t main(){
     cin.tie(0);
     // freopen("input.txt", "r", stdin);
     freopen("sample.txt", "r", stdin);
-    int tt; cin>>tt; while(tt--)
+    // int tt; cin>>tt; while(tt--)
     udontur();
     return 0;
 }
